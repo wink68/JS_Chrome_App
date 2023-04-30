@@ -4,36 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Changmin Kim's Profile</title>
+    <title>Win K's Chrome App</title>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <div id="weather">
-      <span></span>
-      <span></span>
+    <!-- 로그인 화면-->
+    <div class="login">
+      <div class="login-body">
+        <form class="login-form" >
+          <div class="login-box">
+            <div class="wrapper">
+              <div class="cube">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+                <div class="six"></div>
+              </div>
+            </div>
+
+            <div class="login-input" >
+              <input required maxlength="15" type="text" autocomplete="off" placeholder="Username" />           
+              <span>Username</span> 
+              <i></i>            
+            </div>
+            <input class="login-submit" type="submit" autocomplete="off" value="Login"/>
+          </div>
+        </form>
+      </div>    
     </div>
-    <h1 id="greeting"></h1>
 
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and press enter" required />
-    </form>
-    <ul id="todo-list"></ul>
+    <main>
+      <h2 class="clock">00:00:00</h2>
+    
+      <div class="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <h1 class="greeting"></h1>
 
-    <duv id="quote">
-      <span></span>
-      <span></span>
-    </duv>
+      <form class="todo-form">
+        <input type="text" placeholder="Write a To Do and press enter" required />
+      </form>
+      <ul class="todo-list"></ul>
 
-    <script src="js/greeting.js"></script>
+      <div class="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </main>
+
+    <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>

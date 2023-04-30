@@ -1,8 +1,8 @@
-const images = ["0.jpeg", "1.webp", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpg"];
+const images = ["img/0.jpeg", "img/1.webp", "img/2.jpeg", "img/3.jpeg", "img/4.jpeg", "img/5.jpg"];
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+const chosenImage = Math.floor(Math.random() * images.length);
 
 // 이미지 태그 생성
-const bgImage = document.createElement("img");
-bgImage.src = `img/${chosenImage}`;
-document.body.appendChild(bgImage);
+// const bgImage = document.createElement("img");
+// bgImage.src = `img/${chosenImage}`;
+document.body.style.backgroundImage = `url("${images[chosenImage]}")`;
