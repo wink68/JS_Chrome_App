@@ -1,6 +1,6 @@
 const login = document.querySelector(".login");
 const loginForm = document.querySelector(".login-form");
-const loginInput = document.querySelector(".login-input");
+const loginInput = document.querySelector(".login-input input");
 const loginSubmit = document.querySelector(".login-submit");
 const greeting = document.querySelector(".greeting");
 const main = document.querySelector('main');
@@ -19,7 +19,7 @@ function onLoginSubmit(e) {
 
 function paintGreeting(username) {
   login.classList.add(HIDDEN_CLASSNAME);
-  greeting.innerText = `Hello!! ${username}.`;
+  greeting.innerText = `Hello, ${username}!`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
   main.classList.remove(HIDDEN_CLASSNAME);
 }

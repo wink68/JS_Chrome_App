@@ -16,7 +16,7 @@ function paintToDo(toDoObj) {
   toDoList.appendChild(liTag);
 
   spanTag.innerText = toDoObj.text;
-  btn.innerText = "❌";
+  btn.innerText = "x";
   btn.addEventListener("click", deleteToDo)
 }
 

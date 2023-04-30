@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a914b986d1.js" crossorigin="anonymous"></script>
     <title>Win K's Chrome App</title>
   </head>
   <body>
@@ -35,26 +40,44 @@
     </div>
 
     <main>
-      <h2 class="clock">00:00:00</h2>
-    
-      <div class="weather">
-        <span></span>
-        <span></span>
-      </div>
-      <h1 class="greeting"></h1>
+      <div class="layout">
+        <div class="container">
+          <div class="weatherCon">
+            <div class="weather">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <h1 class="greeting"></h1>
+          <h2 class="clock">00:00:00</h2>
 
-      <form class="todo-form">
-        <input type="text" placeholder="Write a To Do and press enter" required />
-      </form>
-      <ul class="todo-list"></ul>
+          <form class="todo-form">
+            <input type="text" placeholder="Write a To Do and press enter!" required />
+          </form>
+          <ul class="todo-list"></ul>
 
-      <div class="quote">
-        <span></span>
-        <span></span>
+          <div class="quote">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="bottom-nav">
+          <div class="content-nav">
+            <a><i class="fa-solid fa-house fa-2xl" id="home"></i></a>
+          </div>
+          <div class="contact">
+            <a target="_blank" href="https://github.com/wink68"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a target="_blank" href="https://valueengine.tistory.com/"><i class="fa-brands fa-blogger-b fa-2xl"></i></a>
+          </div>
+        </div>
       </div>
     </main>
+    <footer>
+      
+    </footer>
 
     <script src="js/login.js"></script>
+    <script src="js/logout.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>

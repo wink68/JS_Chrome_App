@@ -8,6 +8,8 @@
 
     box-sizing: border-box;
     background: #23242a;
+    font-family: 'Foldit', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .login-form {

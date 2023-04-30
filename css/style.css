@@ -1,10 +1,131 @@
 @import "login.css";
 
 body {
-    margin: 0;
-    padding: 0;
-    weight: 100vw;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
     height: 100vh;
+}
+
+.layout {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 1vh;
+    padding: 7vh 6vw !important;
+    width: 80vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    opacity: 0.85;
+    border: none;
+    border-radius: 5vh;
+    overflow: hidden;
+    text-shadow: 1vh 1vh 2vh rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.weatherCon {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Foldit', cursive;
+    font-size: 1.2rem;
+}
+
+.greeting {
+    margin: 0;
+    font-family: 'Foldit', cursive;
+    font-size: 5rem;
+}
+
+.clock {
+    margin: 0;
+    font-family: 'Foldit', cursive;
+    font-size: 13rem;
+}
+
+.todo-form input {
+    width: 15rem;
+    text-align: center;
+    font-family: 'Foldit', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.todo-list span {
+    margin-right: 1rem;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    font-family: 'Foldit', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.quote span {
+    font-size: 1.5rem;
+    color: gray;
+    padding: 0.5rem;
+}
+
+.bottom-nav {
+    width: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-nav {
+    margin-bottom: 1.5vh;
+    padding: calc(0px + 0.1vw);
+    width: fit-content;
+    block-size: fit-content;
+    display: flex;
+
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 5vh;
+    box-shadow: 2px 2px 10px #808080;
+    & > * {
+        margin: calc(0px + 1.0vw);
+        justify-content: center;
+        align-items: center;
+        color: gray;
+    }
+    #home {
+        cursor: pointer;
+    }
+}
+
+.contact {
+    padding-top: 1.5vh;
+    & > * {
+        padding: 8px;
+        color: white;
+    }
+    opacity: 0.85;
 }
 
 .hidden {
