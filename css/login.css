@@ -19,7 +19,7 @@
 
     border-radius: 8px;
     overflow: hidden; /* 테두리 바깥부분 자르기 */
-    background: #1c1c1c;
+    background: #45f3ff;
 }
 
 /* 테두리 회전 영역 만들기 */
@@ -31,7 +31,7 @@
     width: 380px;
     height: 420px;
 
-    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    background: linear-gradient(0deg,transparent,#1c1c1c,#1c1c1c);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
@@ -45,7 +45,7 @@
     width: 380px;
     height: 420px;
 
-    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    background: linear-gradient(0deg,transparent,#1c1c1c,#1c1c1c);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -3s;
@@ -159,70 +159,4 @@
 
 .login-submit:active {
     opacity: 0.8;
-}
-
-/* 큐브 */
-.wrapper {
-    width: 100%;
-    perspective: 800;
-}
-
-.cube {
-    position: relative;
-    top: 10px;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-
-    animation : spin 5s infinite linear;
-    transform-style: preserve-3d;
-}
-
-@keyframes spin {
-  from { transform: rotateY(0) rotateX(0); }
-  to   { transform: rotateY(-360deg) rotateX(360deg); }
-}
-
-.cube > div {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    
-    border: 1px solid #333;
-    opacity: 0.8;
-}
-
-.cube > div:hover {
-  opacity: 1;
-  transition: opacity .3s linear;
-}
-
-.one { 
-    transform: rotateX(90deg) translateZ(50px); 
-    background-color: #E3493B;
-}
-
-.two { 
-    transform: translateZ(50px); 
-    background-color: #45f3ff;
-}
-
-.three { 
-    transform: rotateY(90deg) translateZ(50px); 
-    background-color: #E8487F;
-}
-
-.four { 
-    transform: rotateY(180deg) translateZ(50px); 
-    background-color: #28B78D;
-}
-
-.five { 
-    transform: rotateY(-90deg) translateZ(50px); 
-    background-color: #FF5B00;
-}
-
-.six { 
-    transform: rotateX(-90deg) translateZ(50px); 
-    background-color: #FEEB51;
 }
