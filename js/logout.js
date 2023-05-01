@@ -1,4 +1,4 @@
-const homeBtn = document.querySelector("#home");
+const logOutBtn = document.querySelector("#logOut");
 
 function handleHome() {
     window.localStorage.removeItem("username");
@@ -6,4 +6,4 @@ function handleHome() {
     location.reload();
 }
 
-homeBtn.addEventListener("click", handleHome);
+logOutBtn.addEventListener("click", handleHome);
