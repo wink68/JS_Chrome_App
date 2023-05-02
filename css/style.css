@@ -82,17 +82,6 @@ body {
     font-size: 13rem;
 }
 
-.todo-form input {
-    width: 15rem;
-    text-align: center;
-    font-family: 'Foldit', cursive;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-.todo-list span {
-    margin-right: 1rem;
-}
-
 .quote {
     display: flex;
     flex-direction: column;

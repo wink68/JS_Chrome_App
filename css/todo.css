@@ -8,3 +8,18 @@
     transform: translateX(-50rem);
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.todo-form input {
+    width: 12rem;
+    height: 2rem;
+    
+    text-align: center;
+    font-family: 'Foldit', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.todo-list li {
+    margin: 1rem 0;
+}
+.todo-list span {
+    margin-right: 1rem;
+}
