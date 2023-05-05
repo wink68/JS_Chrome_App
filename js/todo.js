@@ -1,22 +1,27 @@
 const toDoForm = document.querySelector(".todo-form");
-const toDoInput = toDoForm.querySelector("input");
+const toDoAdd = document.querySelector("#todo_add");
+const toDoInput = document.querySelector("#todo_input");
 const toDoList = document.querySelector(".todo-list");
 
 let toDos = [];
 
 // todo list 추가 (li 태그)
 function paintToDo(toDoObj) {
-  const liTag = document.createElement("li");
-  liTag.id = toDoObj.id;   // id 추가
-  const spanTag = document.createElement("span");
+  const li = document.createElement("li");
+  li.id = toDoObj.id;   // id 추가
+  const label = document.createElement("label");
+  const checkBox = document.createElement("input");
+  checkBox.setAttribute("type", "checkbox");
+  const span = document.createElement("span");
   const btn = document.createElement("button");
 
-  liTag.appendChild(spanTag);
-  liTag.appendChild(btn);  
-  toDoList.appendChild(liTag);
+  label.appendChild(checkBox);
+  label.appendChild(span);
+  label.appendChild(btn);
+  li.appendChild(label);
 
-  spanTag.innerText = toDoObj.text;
-  btn.innerText = "x";
+  span.innerText = toDoObj.text;
+  toDoList.appendChild(li);
   btn.addEventListener("click", deleteToDo)
 }
 
@@ -33,12 +38,12 @@ function handleTodoSubmit(e) {
     toDos.push(toDoObj);    // 새 todo 리스트를 기존 리스트 배열에 추가
     paintToDo(toDoObj);
     saveToDos();
-  }
-  toDoForm.addEventListener("submit", handleTodoSubmit);
+}
+toDoForm.addEventListener("submit", handleTodoSubmit);
 
 // todo list 삭제
 function deleteToDo(e) {
-  const delLiTag = e.target.parentElement;
+  const delLiTag = e.target.parentElement.parentElement;
   delLiTag.remove();
   toDos = toDos.filter(toDo => toDo.id !== parseInt(delLiTag.id));  // 삭제된 todo 요소를 배열에서 제거
   saveToDos();  // 로컬스토리지 업데이트
