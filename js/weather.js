@@ -11,7 +11,7 @@ function onGeoSuccess(position) {
         const icon = document.querySelector("#weather-icon");
         const weather = document.querySelector(".weather span:nth-child(1)");
         const temperature = document.querySelector(".weather span:nth-child(2)")
-        const city = document.querySelector(".weather span:nth-child(3)");
+        const city = document.querySelector("#city");
 
         icon.innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="날씨 아이콘" id="wn-icon">`;
         weather.innerHTML = `${data.weather[0].main}`;
