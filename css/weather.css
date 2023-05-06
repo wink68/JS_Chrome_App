@@ -1,26 +1,36 @@
-.right-title {
-    margin: 0;
-    font-family: 'Foldit', cursive;
-    font-size: 3rem;
-}
-
 .right-con {
     transform: translateX(50rem);
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.weather {
-    margin-top: 1rem;
-    height: 10rem;
+.right-title {
+    margin: 0;
+    font-family: 'Foldit', cursive, sans-serif;
+    font-size: 3.5rem;
+    color: rgba(74, 74, 74, 0.8);
+}
+.weatherCon {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 
-    font-family: 'Foldit', cursive;
-    font-size: 1.2rem;
-    text-align: center;
+    color: rgba(69, 69, 69, 0.9);
 }
 
-#city {
-    font-size: 3rem;
+#weather-icon img {
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+}
+
+.weather {
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
 }

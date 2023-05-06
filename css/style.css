@@ -75,13 +75,14 @@ body {
 
 .greeting {
     margin: 0;
-    font-family: 'Foldit', cursive;
+
+    font-family: 'Foldit', cursive, sans-serif;
     font-size: 5rem;
 }
 
 .clock {
     margin: 0;
-    font-family: 'Foldit', cursive;
+    font-family: 'Foldit', cursive, sans-serif;
     font-size: 13rem;
 }
 
@@ -91,13 +92,12 @@ body {
     align-items: center;
 
     text-align: center;
-    font-family: 'Foldit', cursive;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Bruno Ace SC', cursive, sans-serif;
 }
 
 .quote span {
-    font-size: 1.5rem;
-    color: gray;
+    font-size: 1.2rem;
+    color: rgba(69, 69, 69, 0.9);
     padding: 0.5rem;
 }
 
