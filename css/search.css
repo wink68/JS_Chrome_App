@@ -30,7 +30,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 15rem;
+    width: 17rem;
     height: 2rem;
 
     border: solid 2px rgba(69, 69, 69, 0.9);
@@ -39,7 +39,7 @@
 }
 
 #search-form input {
-    width: 10rem;
+    width: 12rem;
 
     border: none;
     outline: none;
