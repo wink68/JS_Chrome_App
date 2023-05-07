@@ -25,6 +25,77 @@
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.btn-con {
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bgBtnOne {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 96px;
+    background: #FFCABB;
+    box-shadow: inset -2px -2px 4px #a6837a,
+                inset 2px 2px 4px #fffffc;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+#bgBtnTwo {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 96px;
+    background: #FFE9BF;
+    box-shadow: inset -2px -2px 4px #a6977c,
+                inset 2px 2px 4px #ffffff;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+#bgBtnThree {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 96px;
+    background: #9EFFCC;
+    box-shadow: inset -2px -2px 4px #67a685,
+                inset 2px 2px 4px #d5ffff;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+#bgBtnFour {
+    width: 20px;
+    height: 20px;
+    
+    border-radius: 96px;
+    background: #92CFFF;
+    box-shadow: inset -2px -2px 4px #5f87a6,
+                inset 2px 2px 4px #c5ffff;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+#bgBtnFive {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 96px;
+    background: #636363;
+    box-shadow: inset -2px -2px 4px #555555,
+                inset 2px 2px 4px #717171;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
 .bottom-nav {
     padding-top: 1.5vh;
     opacity: 0.85;
