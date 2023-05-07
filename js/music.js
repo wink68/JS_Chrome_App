@@ -30,7 +30,6 @@ function loadAudio() {
     music.load()
     playMusic();
 }
-loadAudio();
 
 function playMusic() {
     if (music.currentTime === 0) {
