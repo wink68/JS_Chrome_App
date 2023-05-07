@@ -2,8 +2,9 @@
 @import "cube.css";
 @import "nav.css";
 @import "todo.css";
-@import "weather.css";
 @import "music.css";
+@import "weather.css";
+@import "search.css";
 
 * {
     margin: 0;
@@ -88,33 +89,6 @@ body {
 .right-con {
     transform: translateX(50rem);
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.music-container {
-    margin-bottom: 1rem;
-    padding: 0.5vh 0.5vw !important;
-    width: 20rem;
-    height: 5.5rem;
-
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 2rem;
-    overflow: hidden;
-}
-.weather-container {
-    padding: 2rem 0.5vw !important;
-    width: 20rem;
-    height: 25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 2rem;
-    overflow: hidden;
-    text-shadow: 1vh 1vh 2vh rgba(0,0,0,0.2);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
 
 .greeting {
