@@ -1,17 +1,18 @@
-.weather-title {
+.search-title {
     margin: 0;
     font-family: 'Foldit', cursive, sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: rgba(69, 69, 69, 0.9);
 }
 
-.weather-container {
-    padding: 2rem 0.5vw !important;
+.search-container {
+    margin-top: 1rem;
+    padding: 1rem 0.5vw !important;
     width: 20rem;
-    height: 15rem;
+    height: 7rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
     background-color: rgba(255, 255, 255, 0.8);
@@ -25,23 +26,23 @@
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
 
-.weather-con {
+#search-form {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 15rem;
+    height: 2rem;
+
+    border: solid 2px rgba(69, 69, 69, 0.9);
+    border-radius: 3rem;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
-#weather-icon img {
-    width: 7rem;
-    height: 7rem;
-    background-size: cover;
-}
+#search-form input {
+    width: 10rem;
 
-.weather {
-    width: 6rem;
-    height: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgba(48, 48, 48);
 }
