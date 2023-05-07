@@ -24,7 +24,7 @@ body {
 }
 
 .layout {
-    padding-top: 5.5rem;
+    padding-top: 4.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +39,7 @@ body {
 .container {
     margin: 1vh;
     padding: 2rem 3rem !important;
-    width: 70vh;
+    width: 40rem;
     height: 32.5rem;
     display: flex;
     flex-direction: column;
@@ -122,12 +122,14 @@ body {
 
     font-family: 'Foldit', cursive, sans-serif;
     font-size: 5rem;
+    color: rgba(69, 69, 69, 0.9);
 }
 
 .clock {
     margin: 0;
     font-family: 'Foldit', cursive, sans-serif;
     font-size: 10rem;
+    color: rgba(69, 69, 69, 0.9);
 }
 
 .quote {
