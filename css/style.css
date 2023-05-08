@@ -42,9 +42,9 @@ body {
 
 .container {
     margin: 1vh;
-    padding: 0 3rem 2rem 3rem !important;
+    padding: 2rem 3rem !important;
     width: 40rem;
-    height: 34.5rem;
+    height: 32.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,6 +99,17 @@ body {
 
     font-family: 'Foldit', cursive, sans-serif;
     font-size: 5rem;
+    color: rgba(69, 69, 69, 0.9);
+}
+
+.day-nav {
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2rem;
     color: rgba(69, 69, 69, 0.9);
 }
 
