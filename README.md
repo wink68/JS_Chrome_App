@@ -1,5 +1,5 @@
 ## 1. Link
-* [JS Chrome App](https://wink68.github.io/JS_Chome_App/)
+* [To Do List App](https://wink68.github.io/JS_Chome_App/)
 
 <br>
 
