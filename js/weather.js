@@ -1,4 +1,5 @@
 const API_KEY = "f106a472745a0b328406fea696f4bd2b";
+const icon = document.querySelector("#weather-icon");
 
 function onGeoSuccess(position) {
     const lat = position.coords.latitude;
@@ -8,7 +9,6 @@ function onGeoSuccess(position) {
     fetch(url)
       .then(res => res.json())
       .then(data => {
-        const icon = document.querySelector("#weather-icon");
         const weather = document.querySelector(".weather span:nth-child(1)");
         const temperature = document.querySelector(".weather span:nth-child(2)")
         const city = document.querySelector("#city");
@@ -20,6 +20,9 @@ function onGeoSuccess(position) {
       });
 }
 function onGeoError() {
+  const weatherCon = document.querySelector(".weather");
+  weatherCon.classList.add(HIDDEN_CLASSNAME);
+  icon.innerHTML = "Can't find information";
   alert("Can't find you. No weather for you.");
 }
 
